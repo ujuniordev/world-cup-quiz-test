@@ -1,0 +1,52 @@
+:root {
+  --search-box-height: 40px;
+  --content-max-width: 600px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  height: 100px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 50px auto;
+}
+
+button {
+  display: inline-block;
+  margin: 10px;
+  width: 150px;
+  height: 40px;
+  border-radius: 0;
+  background: #EEE;
+  border: 1px solid gray;
+}
+
+#start-game-button {
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#choices-container #game-over-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+}
