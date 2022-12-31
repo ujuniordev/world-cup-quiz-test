@@ -1,3 +1,14 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Hind', sans-serif;
+  margin: 0;
+  background-image: url("../images/world-cup-background.jpg");
+  
+}
+
 :root {
   --search-box-height: 40px;
   --content-max-width: 600px;
@@ -6,6 +17,8 @@
 *,
 *::before,
 *::after {
+  padding: 0;
+  border: none;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -19,10 +32,15 @@ header {
   height: 100px;
 }
 
+h1 {
+  color: #fff;
+}
+
+
 h1,
 h2 {
   text-align: center;
-  margin: 50px auto;
+  margin: 100px auto;
 }
 
 button {
@@ -30,9 +48,6 @@ button {
   margin: 10px;
   width: 150px;
   height: 40px;
-  border-radius: 0;
-  background: #EEE;
-  border: 1px solid gray;
 }
 
 #start-game-button {
@@ -42,11 +57,34 @@ button {
   margin-right: auto;
 }
 
-#choices-container #game-over-container {
+#choices-container, #game-over-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 700px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+#question-counter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 700px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#question-counter ul {
+  padding: 0;
+}
+
+#question-container {
+  margin-bottom: 30px;
+}
+
+#quiz-container {
+  background-color: #fff;
+  margin: 0 25% 0 25%;
+  padding: 100px 0 100px 0;
 }

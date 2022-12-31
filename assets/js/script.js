@@ -57,7 +57,7 @@ function questionsCounter() {
   let i = 1;
   questions.forEach(function(question){
 
-    questionList += '<li id="question' + i + '">' + i + '</li>';
+    questionList += '<li class="btn" id="question' + i + '">' + i + '</li>';
     i++;
   });
   
@@ -81,7 +81,7 @@ function showNextQuestion() {
   for (let choice of currentQuestion.choices) {
     let choiceButton = document.createElement("button");
     choiceButton.textContent = choice;
-    choiceButton.classList.add("answer-button");
+    choiceButton.classList.add("answer-button", "btn", "btn-secondary");
 
     // We're encoding the answer in the id, but this is not a good way
     // to do this.
